@@ -1,0 +1,9 @@
+
+  <footer id="footer">
+    {{ site.copyright }} {{ year }}
+  </footer>
+</div>
+</div>
+
+</body>
+</html>

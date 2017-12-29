@@ -1,0 +1,62 @@
+
+<koken:include file="header.lens" />
+
+<koken:load>
+  <h2>Latest uploads</h2>
+  <!-- Parent element for the whole grid -->
+  <div id="kgrid">
+    <!-- Loop over every returned item -->
+    <koken:loop>
+      <!-- Publish a medium-sized image for each -->
+      <div class="kgrid_item">
+        <koken:link>
+          <koken:img preset="medium" lazy="true" />
+        </koken:link>
+      </div>
+    </koken:loop>
+  </div>
+</koken:load>
+<style>
+
+</style>
+
+<!-- ***********  Pillar / Masonry Trigger  ***********  -->
+
+<script>
+  $(function() {
+    $('#kgrid').pillar({
+      items: '.kgrid_item'
+    });
+  });
+</script>
+
+<!-- ***********  Scroll to Top  ***********  -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+
+<script type="text/javascript">
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {
+    scrollFunction()
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+  }
+</script>
+
+<!--   ***********  End Scroll to Top  ***********   -->
+
+
+<koken:include file="footer.lens" />

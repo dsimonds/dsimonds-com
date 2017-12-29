@@ -1,0 +1,22 @@
+
+<koken:include file="header.lens" />
+
+<koken:load>
+  <article>
+    <h2>
+      <koken:link>
+        {{ essay.title }}
+      </koken:link>
+    </h2>
+    <p>
+      <koken:time />
+    </p>
+    {{ essay.content paragraphs="true" }}
+  </article>
+<koken:else>
+  <koken:note>
+    No published essay found
+  </koken:note>
+</koken:load>
+
+<koken:include file="footer.lens" />
