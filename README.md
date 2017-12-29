@@ -1,5 +1,7 @@
-# dsimonds-com
-HTML code I wrote for photography portfolio website
+# dsimonds.com
+HTML code I wrote for photography portfolio website. This website uses responsive coding for mobile devices.
+
+http://dsimonds.com/
 
 # INDEX
 ![Index Page](./screenshots/01.JPG)
