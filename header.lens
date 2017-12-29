@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+  <koken:meta />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="google-site-verification" content="Eq4wm3v-xgjcW9heD02BD2D5G4O3pNtgOMI_8M_6_ss" />
+  <koken:title />
+  <koken:settings />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300">
+  <koken:asset file="pillar.js" common="true" />
+
+  <!--  **********  START FAVICONS  **********  -->
+
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="./favicons/196x196" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="./favicons/96x96" />
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="./favicons/32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="./favicons/16x16" />
+  <link rel="icon" type="image/png" href="favicon-128.png" sizes="./favicons/128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  
+  <!--  **********  END FAVICONS  **********  -->
+
+</head>
+
+<body>
+  <div class="outer">
+    <div class="inner">
+      <header>
+        <ol class="grid">
+          <li>
+            <h1 class="logoLink"><a href="http://www.dsimonds.com/">{{ site.title }}<br>{{ site.tagline }}</a></h1>
+        </ol>
+        </li>
+
+        <div id="navDesktop">
+          <nav>
+            <koken:navigation class="navigation" />
+          </nav>
+        </div>
+        <!--  **********  HAMBURGER MENU  ********  -->
+
+
+        <!--    Made by Erik Terwan    -->
+        <!--   24th of November 2015   -->
+        <!--    All rights reserved    -->
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+            <input type="checkbox" />
+
+            <!--
+    Some spans to act as a hamburger.
+
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+            <ul id="menu">
+              <nav>
+                <koken:navigation class="navigation" />
+              </nav>
+            </ul>
+          </div>
+        </nav>
+
+
+      </header>
+<br><br>
