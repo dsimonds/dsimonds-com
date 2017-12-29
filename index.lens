@@ -1,0 +1,54 @@
+<koken:include file="header.lens" />
+
+<koken:load>
+  <h1>Featured content</h1>
+  <ul>
+    <koken:loop>
+      <li>
+        <koken:link>
+          <koken:img />
+        </koken:link>
+        <koken:link>
+          {{ content.title | content.filename }}
+        </koken:link>
+      </li>
+    </koken:loop>
+  </ul>
+<koken:else>
+    <koken:note>
+    No featured content found
+  </koken:note>
+</koken:load>
+
+
+<koken:load source="featured_albums">
+<!--
+  <div class="outer">
+  <div class="inner">-->
+  <div id="homeAlbums">
+  <ol class="featuredAlbums">
+    <koken:loop>
+      <li>
+
+		<!-- image menu -->
+        <koken:link>
+            <figure>
+            <p class="albumTitle">{{ album.title }}</p>
+            <koken:img size="1:1" />
+            <figcaption>{{ album.title }}</figcaption>
+            </figure>
+        </koken:link>
+
+      </li>
+    </koken:loop>
+  </ol>
+  </div>
+  </div>
+
+  <koken:else>
+    <koken:note>
+    No featured albums found
+  </koken:note>
+</koken:load>
+
+<koken:include file="footer.lens" />

@@ -1,0 +1,91 @@
+
+<koken:include file="header.lens" />
+
+<!--  ***********  ALBUM TITLE ***********  -->
+
+<koken:load>
+<div class="outer">
+  <div class="inner">
+  <ol class="grid"><li>
+  <div id="albumTitle">
+  <p>{{ album.title }}</p>
+  </div>
+  {{ album.description paragraphs="true" }}
+  </ol></li>
+
+<!--  ***********  MAIN IMAGES  ***********  -->
+
+    <br><br><br>
+    <koken:loop>
+        <koken:link>
+          <koken:img  class="albumImg"/>
+        </koken:link>
+    </koken:loop>
+<koken:else>
+  <koken:note>
+    No album data found
+  </koken:note>
+</div>
+</div>
+</koken:load>
+
+<!-- ***********  Scroll to Top  ***********  -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+
+<script type="text/javascript">
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("myBtn").style.display = "block";
+  } else {
+      document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Chrome, Safari and Opera
+  document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+</script>
+
+<!--   ***********  End Scroll to Top  ***********   -->
+
+<hr>
+
+<!--   ***********  Footer of Featured Albums  ***********   -->
+
+<div class="albumFooter">
+<koken:load source="featured_albums">
+
+  <div id="homeAlbums">
+  <ol class="featuredAlbums">
+    <koken:loop>
+      <li>
+
+        <koken:link>
+            <figure>
+            <koken:img size="1:1" />
+            <figcaption>{{ album.title }}</figcaption>
+            </figure>
+        </koken:link>
+
+      </li>
+    </koken:loop>
+  </ol>
+  </div>
+  </div>
+
+  <koken:else>
+    <koken:note>
+    No featured albums found
+  </koken:note>
+</koken:load>
+</div>
+
+
+<koken:include file="footer.lens" />

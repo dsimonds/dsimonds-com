@@ -1,0 +1,19 @@
+
+<koken:include file="header.lens" />
+
+<koken:load>
+  <h2> {{ content.title | content.filename }} </h2>
+  <koken:content_image>
+    <koken:img />
+  </koken:content_image>
+  <koken:content_video>
+    <koken:video />
+  </koken:content_video>
+  {{ content.caption paragraphs="true" }}
+<koken:else>
+  <koken:note>
+    No image or video found
+  </koken:note>
+</koken:load>
+
+<koken:include file="footer.lens" />

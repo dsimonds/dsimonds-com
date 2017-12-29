@@ -1,0 +1,25 @@
+
+<koken:include file="header.lens" />
+
+<koken:load>
+  <ol class="list">
+    <koken:loop>
+      <li>
+        <article>
+          <h2>
+            <koken:link>
+              {{ essay.title }}
+            </koken:link>
+          </h2>
+          {{ essay.content paragraphs="true" }}
+        </article>
+      </li>
+    </koken:loop>
+  </ol>
+<koken:else>
+  <koken:note>
+    No published essays found
+  </koken:note>
+</koken:load>
+
+<koken:include file="footer.lens" />

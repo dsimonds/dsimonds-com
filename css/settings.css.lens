@@ -1,0 +1,512 @@
+body {
+  background-color: $color_bg;
+  font-family: $font_body, 'futura-pt', 'Raleway', 'arial', sans-serif;
+  color: $color_text;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: $firefox_alias;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+ol {
+  list-style: none;
+}
+
+
+/* **** PAGE TITLE **** */
+
+ol.grid p {
+  font-size: 2.5em;
+}
+
+
+
+
+/* **** ALBUM TITLE **** */
+
+@media (max-width:845px) {
+  #albumTitle {
+    font-size: 1.2em;
+    margin: -50px 0px -50px -25px;
+    /*border-bottom: .1em dotted rgb(170, 230, 200);*/
+  }
+}
+
+@media (min-width:846px) {
+  #albumTitle {
+    float: right;
+    clear: both;
+    margin-right: -80px;
+    font-size: .9em;
+    margin-top: 5px;
+    padding: 0em 0em 0em 1em;
+    /*border-left: .1em dotted rgb(170, 230, 200);*/
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color_text;
+}
+
+
+/* **** MENU **** */
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  .navigation {
+    float: right;
+  }
+  .navigation a {
+    padding: 0px 20px 0px 0px;
+    margin-top: -26px;
+    text-decoration: none;
+    color: $color_text;
+    font-size: 1.4em;
+    border-bottom: .05em solid rgb(170, 230, 200);
+  }
+}
+
+
+/* **** MENU HOVER**** */
+
+.navigation a:hover {
+  color: rgb(170, 230, 200);
+}
+
+
+/* **** OUTER CONTAINER **** */
+
+.outer {
+  width: 100%;
+}
+
+
+/* **** INNER CONTAINER **** */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  .inner {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  .inner {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+
+/* **** HOME IMAGES **** */
+
+#homeAlbums {
+  clear: both;
+  margin-top: 7em;
+}
+
+
+/* **** HOME IMAGES **** */
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  figure {
+    width: 33%;
+    float: left;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+
+/* **** ALBUM IMAGES **** */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  .k-source-album img {
+    width: 99%;
+    height: 99%
+  }
+}
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  .k-source-album img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+
+/* **** HOME IMAGES **** */
+
+.k-source-index img {
+  width: 90%;
+  height: 90%;
+}
+
+
+/* **** HOME IMAGES CAPTION **** */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  .k-source-index figcaption {
+    display: none;
+  }
+}
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  .k-source-index .albumTitle {
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 779px)
+/* MOBILE */
+
+{
+  .k-source-index .albumTitle {
+    display: none;
+  }
+}
+
+figcaption {
+  font-size: 1.4em;
+}
+
+
+/* **** HOME IMAGES **** */
+
+.featuredAlbums img {
+  list-style: none;
+}
+
+
+/* **** HOME IMAGES **** */
+
+.featuredAlbums li {
+  display: inline;
+}
+
+
+/* **** PAGE TITLE **** */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  .logoLink {
+    margin-left: 1em;
+  }
+}
+
+.logoLink {
+  text-decoration: none;
+  color: $color_text;
+}
+
+@media (min-width:779px)
+/* DESKTOP */
+
+{
+  .k-source-page .aboutMeImg {
+    width: 2000px !important;
+  }
+}
+
+.k-source-page p {
+  font-size: 1.3em;
+}
+
+@media (max-width:1256px)
+/* MOBILE */
+
+{
+  .aboutMe {
+    clear: both;
+  }
+}
+
+
+/* **** FOOTER IMAGES **** */
+
+@media (max-width:779px)
+/* MOBILE */
+
+{
+  .albumFooter {
+    display: none;
+  }
+}
+
+
+/* **** FOOTER COPYRIGHT **** */
+
+.k-source-page #footer {
+  margin-top: 5em !important;
+}
+
+@media (max-width:779px)
+/* MOBILE */
+
+{
+  .k-source-album #footer {
+    margin-top: 5em;
+  }
+}
+
+#footer {
+  margin-top: 35em;
+  clear: both;
+}
+
+
+/*  **********  **************  **********
+    **********  HAMBURGER MENU  **********
+    **********  **************  **********  */
+
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  #navDesktop {
+    display: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: -80px;
+    left: 2em;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  /*
+ * THE HAMBURGER
+ */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(188, 244, 216);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+  }
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  /*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: rgb(188, 244, 216);
+  }
+  /*
+ * But let's hide the middle one.
+ */
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+ * Ohyeah and the last one should go the other direction
+ */
+  #menuToggle input:checked~span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ * Also defines the menu style
+ */
+  #menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: rgb(249, 255, 252);
+    /* light mint */
+    /*background: rgb(255, 249, 251); */
+    /* light pink */
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+  #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    list-style: none;
+  }
+  /*
+ * And let's fade it in from the left
+ */
+  #menuToggle input:checked~ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  #menuToggle {
+    display: none;
+  }
+  .navigation li {
+    list-style: none;
+    display: inline;
+  }
+}
+
+
+/*  ********** Scroll to Top **********  */
+
+@media (max-width: 779px)
+/* MOBILE */
+
+{
+  #myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: grey;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    opacity: .5;
+  }
+  #myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+    opacity: .7;
+  }
+}
+
+@media (min-width: 779px)
+/* DESKTOP */
+
+{
+  #myBtn {
+    display: none;
+    opacity: 0;
+  }
+}
+
+
+/*  **********  ***************  **********
+    **********  Pillar Gallery   **********
+    **********  ***************  **********  */
+
+.kgrid_item {
+  /* Hides each medium sized image */
+  display: none;
+}
+
+.kgrid_item img {
+  /* Responsive magic */
+  width: 100%;
+  height: auto;
+}
+
+
+/* Image Background */
+
+.albumImg {
+  background: url(http://www.dsimonds.com/storage/themes/dsimondsPortpholio/images/loading.gif) no-repeat -9999px -9999px;
+}
